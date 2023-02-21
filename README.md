@@ -2,14 +2,15 @@
 
 SrNo 	Dataset URL statement
 1. 	58k reddit comments	
-	https://research.google/resources/datasets/goemotions/	
+	https://research.google/resources/datasets/goemotions/
+	
 	which category of comment? is it harmful or not?
 				
 2. 	YouTube Trending Video Dataset
 	https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?select=IN_youtube_trending_data.csv
 	Analyzing what factors affect how popular a YouTube video will be?
 
-3.  	Android smartphones high accuracy GNSS datasets
+3.  Android smartphones high accuracy GNSS datasets
 	https://research.google/resources/datasets/android-accuracy/
 	How accurate are gps? and where its best/worst?
 	
