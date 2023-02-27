@@ -49,6 +49,12 @@ SrNo 	Dataset URL statement
 	which countries emit toxic gases?
 	classification gdpwise co2 emission
 	
+1.Locational banking statistics
+	WS_LBS_D_PUB_csv_col
+
+2.Debt securities statistics
+	WS_DEBT_SEC2_PUB_csv_col
+	
 	
 # Data Flow
 

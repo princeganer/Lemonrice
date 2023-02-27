@@ -1,0 +1,10 @@
+1. Prepared Abstract according to standard format.
+Link: https://docs.google.com/document/d/1cg8JWxX-AE2Ac45m2-PqRXXC2qdomUoMlxwt5JLwFug/edit
+
+2. Checked notebooks on kaggle for reference:
+Links:
+	i. https://docs.google.com/document/d/1cg8JWxX-AE2Ac45m2-PqRXXC2qdomUoMlxwt5JLwFug/edit
+	ii.
+
+3. Prepared a Tableau Visualisation for the dataset:
+	Link : https://docs.google.com/document/d/1cg8JWxX-AE2Ac45m2-PqRXXC2qdomUoMlxwt5JLwFug/edit

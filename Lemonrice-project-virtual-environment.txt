@@ -1,0 +1,600 @@
+
+(base) D:\Lemonrice\virtual_demo>conda create -n demo python=3.9
+Collecting package metadata (current_repodata.json): failed
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://repo.anaconda.com/pkgs/main/win-64/current_repodata.json>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+If your current network has https://www.anaconda.com blocked, please file
+a support request with your network engineering team.
+
+'https//repo.anaconda.com/pkgs/main/win-64'
+
+**------------------------------------------------------
+because of wifi above error occurred
+**------------------------------------------------------
+
+(base) D:\Lemonrice\virtual_demo>conda create -n demo python=3.9
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 22.9.0
+  latest version: 23.1.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\Ganer\.conda\envs\demo
+
+  added / updated specs:
+    - python=3.9
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2023.01.10 |       haa95532_0         121 KB
+    certifi-2022.12.7          |   py39haa95532_0         149 KB
+    openssl-1.1.1t             |       h2bbff1b_0         5.5 MB
+    pip-22.3.1                 |   py39haa95532_0         2.7 MB
+    python-3.9.16              |       h6244533_0        19.4 MB
+    setuptools-65.6.3          |   py39haa95532_0         1.1 MB
+    sqlite-3.40.1              |       h2bbff1b_0         889 KB
+    tzdata-2022g               |       h04d1e81_0         114 KB
+    wheel-0.38.4               |   py39haa95532_0          83 KB
+    ------------------------------------------------------------
+                                           Total:        30.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2023.01.10-haa95532_0 None
+  certifi            pkgs/main/win-64::certifi-2022.12.7-py39haa95532_0 None
+  openssl            pkgs/main/win-64::openssl-1.1.1t-h2bbff1b_0 None
+  pip                pkgs/main/win-64::pip-22.3.1-py39haa95532_0 None
+  python             pkgs/main/win-64::python-3.9.16-h6244533_0 None
+  setuptools         pkgs/main/win-64::setuptools-65.6.3-py39haa95532_0 None
+  sqlite             pkgs/main/win-64::sqlite-3.40.1-h2bbff1b_0 None
+  tzdata             pkgs/main/noarch::tzdata-2022g-h04d1e81_0 None
+  vc                 pkgs/main/win-64::vc-14.2-h21ff451_1 None
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2 None
+  wheel              pkgs/main/win-64::wheel-0.38.4-py39haa95532_0 None
+  wincertstore       pkgs/main/win-64::wincertstore-0.2-py39haa95532_2 None
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+wheel-0.38.4         | 83 KB     | ############################################################################ | 100%
+tzdata-2022g         | 114 KB    | ############################################################################ | 100%
+setuptools-65.6.3    | 1.1 MB    | ############################################################################ | 100%
+pip-22.3.1           | 2.7 MB    | ############################################################################ | 100%
+ca-certificates-2023 | 121 KB    | ############################################################################ | 100%
+sqlite-3.40.1        | 889 KB    | ############################################################################ | 100%
+python-3.9.16        | 19.4 MB   | ############################################################################ | 100%
+openssl-1.1.1t       | 5.5 MB    | ############################################################################ | 100%
+certifi-2022.12.7    | 149 KB    | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate demo
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+Retrieving notices: ...working... done
+
+(base) D:\Lemonrice\virtual_demo>conda activate demo
+
+(demo) D:\Lemonrice\virtual_demo>pip install numpy
+Collecting numpy
+  Downloading numpy-1.24.2-cp39-cp39-win_amd64.whl (14.9 MB)
+     ---------------------------------------- 14.9/14.9 MB 13.9 MB/s eta 0:00:00
+Installing collected packages: numpy
+Successfully installed numpy-1.24.2
+
+(demo) D:\Lemonrice\virtual_demo>jupyter
+'jupyter' is not recognized as an internal or external command,
+operable program or batch file.
+
+(demo) D:\Lemonrice\virtual_demo>pip list
+Package       Version
+------------- ---------
+certifi       2022.12.7
+dnspython     2.2.1
+jupyterthemes 0.20.0
+lesscpy       0.15.1
+numpy         1.24.2
+pip           22.3.1
+ply           3.11
+pymongo       4.3.3
+setuptools    65.6.3
+wheel         0.38.4
+wincertstore  0.2
+
+(demo) D:\Lemonrice\virtual_demo>pip install jupyter
+Collecting jupyter
+  Downloading jupyter-1.0.0-py2.py3-none-any.whl (2.7 kB)
+Collecting nbconvert
+  Downloading nbconvert-7.2.9-py3-none-any.whl (274 kB)
+     ---------------------------------------- 274.9/274.9 kB 4.2 MB/s eta 0:00:00
+Collecting notebook
+  Downloading notebook-6.5.2-py3-none-any.whl (439 kB)
+     ---------------------------------------- 439.1/439.1 kB 9.1 MB/s eta 0:00:00
+Collecting jupyter-console
+  Downloading jupyter_console-6.6.1-py3-none-any.whl (24 kB)
+Collecting ipykernel
+  Downloading ipykernel-6.21.2-py3-none-any.whl (149 kB)
+     ---------------------------------------- 149.7/149.7 kB 9.3 MB/s eta 0:00:00
+Collecting qtconsole
+  Downloading qtconsole-5.4.0-py3-none-any.whl (121 kB)
+     ---------------------------------------- 121.0/121.0 kB 6.9 MB/s eta 0:00:00
+Collecting ipywidgets
+  Downloading ipywidgets-8.0.4-py3-none-any.whl (137 kB)
+     ---------------------------------------- 137.8/137.8 kB ? eta 0:00:00
+Collecting tornado>=6.1
+  Using cached tornado-6.2-cp37-abi3-win_amd64.whl (425 kB)
+Collecting comm>=0.1.1
+  Downloading comm-0.1.2-py3-none-any.whl (6.5 kB)
+Collecting nest-asyncio
+  Downloading nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
+Collecting jupyter-client>=6.1.12
+  Downloading jupyter_client-8.0.3-py3-none-any.whl (102 kB)
+     ---------------------------------------- 102.7/102.7 kB ? eta 0:00:00
+Collecting packaging
+  Downloading packaging-23.0-py3-none-any.whl (42 kB)
+     ---------------------------------------- 42.7/42.7 kB 2.0 MB/s eta 0:00:00
+Collecting ipython>=7.23.1
+  Downloading ipython-8.10.0-py3-none-any.whl (784 kB)
+     ---------------------------------------- 784.3/784.3 kB 25.0 MB/s eta 0:00:00
+Collecting matplotlib-inline>=0.1
+  Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting jupyter-core!=5.0.*,>=4.12
+  Downloading jupyter_core-5.2.0-py3-none-any.whl (94 kB)
+     ---------------------------------------- 94.3/94.3 kB 5.3 MB/s eta 0:00:00
+Collecting psutil
+  Downloading psutil-5.9.4-cp36-abi3-win_amd64.whl (252 kB)
+     ---------------------------------------- 252.5/252.5 kB 15.1 MB/s eta 0:00:00
+Collecting debugpy>=1.6.5
+  Downloading debugpy-1.6.6-cp39-cp39-win_amd64.whl (4.8 MB)
+     ---------------------------------------- 4.8/4.8 MB 20.7 MB/s eta 0:00:00
+Collecting traitlets>=5.4.0
+  Downloading traitlets-5.9.0-py3-none-any.whl (117 kB)
+     ---------------------------------------- 117.4/117.4 kB 6.7 MB/s eta 0:00:00
+Collecting pyzmq>=20
+  Downloading pyzmq-25.0.0-cp39-cp39-win_amd64.whl (976 kB)
+     ---------------------------------------- 976.2/976.2 kB 3.6 MB/s eta 0:00:00
+Collecting jupyterlab-widgets~=3.0
+  Downloading jupyterlab_widgets-3.0.5-py3-none-any.whl (384 kB)
+     ---------------------------------------- 384.3/384.3 kB 23.4 MB/s eta 0:00:00
+Collecting widgetsnbextension~=4.0
+  Downloading widgetsnbextension-4.0.5-py3-none-any.whl (2.0 MB)
+     ---------------------------------------- 2.0/2.0 MB 18.6 MB/s eta 0:00:00
+Collecting prompt-toolkit>=3.0.30
+  Downloading prompt_toolkit-3.0.37-py3-none-any.whl (385 kB)
+     ---------------------------------------- 385.2/385.2 kB 23.4 MB/s eta 0:00:00
+Collecting pygments
+  Downloading Pygments-2.14.0-py3-none-any.whl (1.1 MB)
+     ---------------------------------------- 1.1/1.1 MB 11.8 MB/s eta 0:00:00
+Collecting tinycss2
+  Downloading tinycss2-1.2.1-py3-none-any.whl (21 kB)
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.11.2-py3-none-any.whl (129 kB)
+     ---------------------------------------- 129.4/129.4 kB 7.9 MB/s eta 0:00:00
+Collecting defusedxml
+  Using cached defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Collecting bleach
+  Downloading bleach-6.0.0-py3-none-any.whl (162 kB)
+     ---------------------------------------- 162.5/162.5 kB ? eta 0:00:00
+Collecting jupyterlab-pygments
+  Using cached jupyterlab_pygments-0.2.2-py2.py3-none-any.whl (21 kB)
+Collecting mistune<3,>=2.0.3
+  Downloading mistune-2.0.5-py2.py3-none-any.whl (24 kB)
+Collecting jinja2>=3.0
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting importlib-metadata>=3.6
+  Downloading importlib_metadata-6.0.0-py3-none-any.whl (21 kB)
+Collecting nbclient>=0.5.0
+  Downloading nbclient-0.7.2-py3-none-any.whl (71 kB)
+     ---------------------------------------- 72.0/72.0 kB 3.9 MB/s eta 0:00:00
+Collecting markupsafe>=2.0
+  Downloading MarkupSafe-2.1.2-cp39-cp39-win_amd64.whl (16 kB)
+Collecting nbformat>=5.1
+  Downloading nbformat-5.7.3-py3-none-any.whl (78 kB)
+     ---------------------------------------- 78.1/78.1 kB 4.5 MB/s eta 0:00:00
+Collecting pandocfilters>=1.4.1
+  Using cached pandocfilters-1.5.0-py2.py3-none-any.whl (8.7 kB)
+Collecting ipython-genutils
+  Using cached ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting Send2Trash>=1.8.0
+  Using cached Send2Trash-1.8.0-py3-none-any.whl (18 kB)
+Collecting nbclassic>=0.4.7
+  Downloading nbclassic-0.5.2-py3-none-any.whl (10.0 MB)
+     ---------------------------------------- 10.0/10.0 MB 21.2 MB/s eta 0:00:00
+Collecting argon2-cffi
+  Using cached argon2_cffi-21.3.0-py3-none-any.whl (14 kB)
+Collecting prometheus-client
+  Downloading prometheus_client-0.16.0-py3-none-any.whl (122 kB)
+     ---------------------------------------- 122.5/122.5 kB 7.0 MB/s eta 0:00:00
+Collecting terminado>=0.8.3
+  Downloading terminado-0.17.1-py3-none-any.whl (17 kB)
+Collecting qtpy>=2.0.1
+  Downloading QtPy-2.3.0-py3-none-any.whl (83 kB)
+     ---------------------------------------- 83.6/83.6 kB 4.6 MB/s eta 0:00:00
+Collecting zipp>=0.5
+  Downloading zipp-3.14.0-py3-none-any.whl (6.7 kB)
+Collecting jedi>=0.16
+  Downloading jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+     ---------------------------------------- 1.6/1.6 MB 24.7 MB/s eta 0:00:00
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting stack-data
+  Downloading stack_data-0.6.2-py3-none-any.whl (24 kB)
+Collecting colorama
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting decorator
+  Using cached decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting backcall
+  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting python-dateutil>=2.8.2
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pywin32>=1.0
+  Downloading pywin32-305-cp39-cp39-win_amd64.whl (12.2 MB)
+     ---------------------------------------- 12.2/12.2 MB 20.5 MB/s eta 0:00:00
+Collecting platformdirs>=2.5
+  Downloading platformdirs-3.0.0-py3-none-any.whl (14 kB)
+Collecting jupyter-server>=1.8
+  Downloading jupyter_server-2.3.0-py3-none-any.whl (365 kB)
+     ---------------------------------------- 365.8/365.8 kB 22.2 MB/s eta 0:00:00
+Collecting notebook-shim>=0.1.0
+  Downloading notebook_shim-0.2.2-py3-none-any.whl (13 kB)
+Collecting jsonschema>=2.6
+  Downloading jsonschema-4.17.3-py3-none-any.whl (90 kB)
+     ---------------------------------------- 90.4/90.4 kB ? eta 0:00:00
+Collecting fastjsonschema
+  Downloading fastjsonschema-2.16.2-py3-none-any.whl (22 kB)
+Collecting wcwidth
+  Downloading wcwidth-0.2.6-py2.py3-none-any.whl (29 kB)
+Collecting pywinpty>=1.1.0
+  Downloading pywinpty-2.0.10-cp39-none-win_amd64.whl (1.4 MB)
+     ---------------------------------------- 1.4/1.4 MB 22.2 MB/s eta 0:00:00
+Collecting argon2-cffi-bindings
+  Using cached argon2_cffi_bindings-21.2.0-cp36-abi3-win_amd64.whl (30 kB)
+Collecting soupsieve>1.2
+  Downloading soupsieve-2.4-py3-none-any.whl (37 kB)
+Collecting six>=1.9.0
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting webencodings
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting parso<0.9.0,>=0.8.0
+  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
+Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+  Downloading pyrsistent-0.19.3-cp39-cp39-win_amd64.whl (62 kB)
+     ---------------------------------------- 62.7/62.7 kB 1.7 MB/s eta 0:00:00
+Collecting attrs>=17.4.0
+  Downloading attrs-22.2.0-py3-none-any.whl (60 kB)
+     ---------------------------------------- 60.0/60.0 kB 3.3 MB/s eta 0:00:00
+Collecting anyio>=3.1.0
+  Downloading anyio-3.6.2-py3-none-any.whl (80 kB)
+     ---------------------------------------- 80.6/80.6 kB 4.4 MB/s eta 0:00:00
+Collecting jupyter-events>=0.4.0
+  Downloading jupyter_events-0.6.3-py3-none-any.whl (18 kB)
+Collecting jupyter-server-terminals
+  Downloading jupyter_server_terminals-0.4.4-py3-none-any.whl (13 kB)
+Collecting websocket-client
+  Downloading websocket_client-1.5.1-py3-none-any.whl (55 kB)
+     ---------------------------------------- 55.9/55.9 kB 2.9 MB/s eta 0:00:00
+Collecting cffi>=1.0.1
+  Using cached cffi-1.15.1-cp39-cp39-win_amd64.whl (179 kB)
+Collecting executing>=1.2.0
+  Downloading executing-1.2.0-py2.py3-none-any.whl (24 kB)
+Collecting asttokens>=2.1.0
+  Downloading asttokens-2.2.1-py2.py3-none-any.whl (26 kB)
+Collecting pure-eval
+  Using cached pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Collecting sniffio>=1.1
+  Downloading sniffio-1.3.0-py3-none-any.whl (10 kB)
+Collecting idna>=2.8
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+     ---------------------------------------- 61.5/61.5 kB 1.7 MB/s eta 0:00:00
+Collecting pycparser
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Collecting pyyaml>=5.3
+  Using cached PyYAML-6.0-cp39-cp39-win_amd64.whl (151 kB)
+Collecting rfc3339-validator
+  Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+Collecting python-json-logger>=2.0.4
+  Downloading python_json_logger-2.0.7-py3-none-any.whl (8.1 kB)
+Collecting rfc3986-validator>=0.1.1
+  Downloading rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+Collecting isoduration
+  Downloading isoduration-20.11.0-py3-none-any.whl (11 kB)
+Collecting jsonpointer>1.13
+  Downloading jsonpointer-2.3-py2.py3-none-any.whl (7.8 kB)
+Collecting webcolors>=1.11
+  Downloading webcolors-1.12-py3-none-any.whl (9.9 kB)
+Collecting fqdn
+  Downloading fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+Collecting uri-template
+  Downloading uri_template-1.2.0-py3-none-any.whl (10 kB)
+Collecting arrow>=0.15.0
+  Downloading arrow-1.2.3-py3-none-any.whl (66 kB)
+     ---------------------------------------- 66.4/66.4 kB 3.5 MB/s eta 0:00:00
+Installing collected packages: webencodings, wcwidth, Send2Trash, pywin32, pure-eval, pickleshare, mistune, ipython-genutils, fastjsonschema, executing, backcall, zipp, widgetsnbextension, websocket-client, webcolors, uri-template, traitlets, tornado, tinycss2, soupsieve, sniffio, six, rfc3986-validator, pyzmq, pyyaml, pywinpty, python-json-logger, pyrsistent, pygments, pycparser, psutil, prompt-toolkit, prometheus-client, platformdirs, parso, pandocfilters, packaging, nest-asyncio, markupsafe, jupyterlab-widgets, jupyterlab-pygments, jsonpointer, idna, fqdn, defusedxml, decorator, debugpy, colorama, attrs, terminado, rfc3339-validator, qtpy, python-dateutil, matplotlib-inline, jupyter-core, jsonschema, jinja2, jedi, importlib-metadata, comm, cffi, bleach, beautifulsoup4, asttokens, anyio, stack-data, nbformat, jupyter-server-terminals, jupyter-client, arrow, argon2-cffi-bindings, nbclient, isoduration, ipython, argon2-cffi, nbconvert, ipykernel, qtconsole, jupyter-events, jupyter-console, ipywidgets, jupyter-server, notebook-shim, nbclassic, notebook, jupyter
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+jupyterthemes 0.20.0 requires matplotlib>=1.4.3, which is not installed.
+Successfully installed Send2Trash-1.8.0 anyio-3.6.2 argon2-cffi-21.3.0 argon2-cffi-bindings-21.2.0 arrow-1.2.3 asttokens-2.2.1 attrs-22.2.0 backcall-0.2.0 beautifulsoup4-4.11.2 bleach-6.0.0 cffi-1.15.1 colorama-0.4.6 comm-0.1.2 debugpy-1.6.6 decorator-5.1.1 defusedxml-0.7.1 executing-1.2.0 fastjsonschema-2.16.2 fqdn-1.5.1 idna-3.4 importlib-metadata-6.0.0 ipykernel-6.21.2 ipython-8.10.0 ipython-genutils-0.2.0 ipywidgets-8.0.4 isoduration-20.11.0 jedi-0.18.2 jinja2-3.1.2 jsonpointer-2.3 jsonschema-4.17.3 jupyter-1.0.0 jupyter-client-8.0.3 jupyter-console-6.6.1 jupyter-core-5.2.0 jupyter-events-0.6.3 jupyter-server-2.3.0 jupyter-server-terminals-0.4.4 jupyterlab-pygments-0.2.2 jupyterlab-widgets-3.0.5 markupsafe-2.1.2 matplotlib-inline-0.1.6 mistune-2.0.5 nbclassic-0.5.2 nbclient-0.7.2 nbconvert-7.2.9 nbformat-5.7.3 nest-asyncio-1.5.6 notebook-6.5.2 notebook-shim-0.2.2 packaging-23.0 pandocfilters-1.5.0 parso-0.8.3 pickleshare-0.7.5 platformdirs-3.0.0 prometheus-client-0.16.0 prompt-toolkit-3.0.37 psutil-5.9.4 pure-eval-0.2.2 pycparser-2.21 pygments-2.14.0 pyrsistent-0.19.3 python-dateutil-2.8.2 python-json-logger-2.0.7 pywin32-305 pywinpty-2.0.10 pyyaml-6.0 pyzmq-25.0.0 qtconsole-5.4.0 qtpy-2.3.0 rfc3339-validator-0.1.4 rfc3986-validator-0.1.1 six-1.16.0 sniffio-1.3.0 soupsieve-2.4 stack-data-0.6.2 terminado-0.17.1 tinycss2-1.2.1 tornado-6.2 traitlets-5.9.0 uri-template-1.2.0 wcwidth-0.2.6 webcolors-1.12 webencodings-0.5.1 websocket-client-1.5.1 widgetsnbextension-4.0.5 zipp-3.14.0
+
+(demo) D:\Lemonrice\virtual_demo>pip list
+Package                  Version
+------------------------ ---------
+anyio                    3.6.2
+argon2-cffi              21.3.0
+argon2-cffi-bindings     21.2.0
+arrow                    1.2.3
+asttokens                2.2.1
+attrs                    22.2.0
+backcall                 0.2.0
+beautifulsoup4           4.11.2
+bleach                   6.0.0
+certifi                  2022.12.7
+cffi                     1.15.1
+colorama                 0.4.6
+comm                     0.1.2
+debugpy                  1.6.6
+decorator                5.1.1
+defusedxml               0.7.1
+dnspython                2.2.1
+executing                1.2.0
+fastjsonschema           2.16.2
+fqdn                     1.5.1
+idna                     3.4
+importlib-metadata       6.0.0
+ipykernel                6.21.2
+ipython                  8.10.0
+ipython-genutils         0.2.0
+ipywidgets               8.0.4
+isoduration              20.11.0
+jedi                     0.18.2
+Jinja2                   3.1.2
+jsonpointer              2.3
+jsonschema               4.17.3
+jupyter                  1.0.0
+jupyter_client           8.0.3
+jupyter-console          6.6.1
+jupyter_core             5.2.0
+jupyter-events           0.6.3
+jupyter_server           2.3.0
+jupyter_server_terminals 0.4.4
+jupyterlab-pygments      0.2.2
+jupyterlab-widgets       3.0.5
+jupyterthemes            0.20.0
+lesscpy                  0.15.1
+MarkupSafe               2.1.2
+matplotlib-inline        0.1.6
+mistune                  2.0.5
+nbclassic                0.5.2
+nbclient                 0.7.2
+nbconvert                7.2.9
+nbformat                 5.7.3
+nest-asyncio             1.5.6
+notebook                 6.5.2
+notebook_shim            0.2.2
+numpy                    1.24.2
+packaging                23.0
+pandocfilters            1.5.0
+parso                    0.8.3
+pickleshare              0.7.5
+pip                      22.3.1
+platformdirs             3.0.0
+ply                      3.11
+prometheus-client        0.16.0
+prompt-toolkit           3.0.37
+psutil                   5.9.4
+pure-eval                0.2.2
+pycparser                2.21
+Pygments                 2.14.0
+pymongo                  4.3.3
+pyrsistent               0.19.3
+python-dateutil          2.8.2
+python-json-logger       2.0.7
+pywin32                  305
+pywinpty                 2.0.10
+PyYAML                   6.0
+pyzmq                    25.0.0
+qtconsole                5.4.0
+QtPy                     2.3.0
+rfc3339-validator        0.1.4
+rfc3986-validator        0.1.1
+Send2Trash               1.8.0
+setuptools               65.6.3
+six                      1.16.0
+sniffio                  1.3.0
+soupsieve                2.4
+stack-data               0.6.2
+terminado                0.17.1
+tinycss2                 1.2.1
+tornado                  6.2
+traitlets                5.9.0
+uri-template             1.2.0
+wcwidth                  0.2.6
+webcolors                1.12
+webencodings             0.5.1
+websocket-client         1.5.1
+wheel                    0.38.4
+widgetsnbextension       4.0.5
+wincertstore             0.2
+zipp                     3.14.0
+
+(demo) D:\Lemonrice\virtual_demo>pip install pandas
+Collecting pandas
+  Downloading pandas-1.5.3-cp39-cp39-win_amd64.whl (10.9 MB)
+     ---------------------------------------- 10.9/10.9 MB 16.0 MB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.20.3 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from pandas) (1.24.2)
+Collecting pytz>=2020.1
+  Downloading pytz-2022.7.1-py2.py3-none-any.whl (499 kB)
+     ---------------------------------------- 499.4/499.4 kB 32.6 MB/s eta 0:00:00
+Requirement already satisfied: python-dateutil>=2.8.1 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from python-dateutil>=2.8.1->pandas) (1.16.0)
+Installing collected packages: pytz, pandas
+Successfully installed pandas-1.5.3 pytz-2022.7.1
+
+(demo) D:\Lemonrice\virtual_demo>pip install sklearn
+Collecting sklearn
+  Downloading sklearn-0.0.post1.tar.gz (3.6 kB)
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [18 lines of output]
+      The 'sklearn' PyPI package is deprecated, use 'scikit-learn'
+      rather than 'sklearn' for pip commands.
+
+      Here is how to fix this error in the main use cases:
+      - use 'pip install scikit-learn' rather than 'pip install sklearn'
+      - replace 'sklearn' by 'scikit-learn' in your pip requirements files
+        (requirements.txt, setup.py, setup.cfg, Pipfile, etc ...)
+      - if the 'sklearn' package is used by one of your dependencies,
+        it would be great if you take some time to track which package uses
+        'sklearn' instead of 'scikit-learn' and report it to their issue tracker
+      - as a last resort, set the environment variable
+        SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True to avoid this error
+
+      More information is available at
+      https://github.com/scikit-learn/sklearn-pypi-package
+
+      If the previous advice does not cover your use case, feel free to report it at
+      https://github.com/scikit-learn/sklearn-pypi-package/issues/new
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+(demo) D:\Lemonrice\virtual_demo>pip install scikit-learn
+Collecting scikit-learn
+  Downloading scikit_learn-1.2.1-cp39-cp39-win_amd64.whl (8.4 MB)
+     ---------------------------------------- 8.4/8.4 MB 11.1 MB/s eta 0:00:00
+Collecting joblib>=1.1.1
+  Downloading joblib-1.2.0-py3-none-any.whl (297 kB)
+     ---------------------------------------- 298.0/298.0 kB 18.0 MB/s eta 0:00:00
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Requirement already satisfied: numpy>=1.17.3 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from scikit-learn) (1.24.2)
+Collecting scipy>=1.3.2
+  Downloading scipy-1.10.1-cp39-cp39-win_amd64.whl (42.5 MB)
+     ---------------------------------------- 42.5/42.5 MB 12.1 MB/s eta 0:00:00
+Installing collected packages: threadpoolctl, scipy, joblib, scikit-learn
+Successfully installed joblib-1.2.0 scikit-learn-1.2.1 scipy-1.10.1 threadpoolctl-3.1.0
+
+(demo) D:\Lemonrice\virtual_demo>pip install pyspark
+Collecting pyspark
+  Downloading pyspark-3.3.2.tar.gz (281.4 MB)
+     ---------------------------------------- 281.4/281.4 MB 4.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting py4j==0.10.9.5
+  Downloading py4j-0.10.9.5-py2.py3-none-any.whl (199 kB)
+     ---------------------------------------- 199.7/199.7 kB 5.9 MB/s eta 0:00:00
+Building wheels for collected packages: pyspark
+  Building wheel for pyspark (setup.py) ... done
+  Created wheel for pyspark: filename=pyspark-3.3.2-py2.py3-none-any.whl size=281824045 sha256=3a5776a3997a839945c621d448a9b71081d7c736b2baa4f735bd3c786b90180b
+  Stored in directory: c:\users\ganer\appdata\local\pip\cache\wheels\8e\1f\b7\ed748602b39b0e85d8d322ca481856faea8d5360900ee84b00
+Successfully built pyspark
+Installing collected packages: py4j, pyspark
+Successfully installed py4j-0.10.9.5 pyspark-3.3.2
+
+(demo) D:\Lemonrice\virtual_demo>pip install seaborn
+Collecting seaborn
+  Downloading seaborn-0.12.2-py3-none-any.whl (293 kB)
+     ---------------------------------------- 293.3/293.3 kB 4.6 MB/s eta 0:00:00
+Collecting matplotlib!=3.6.1,>=3.1
+  Downloading matplotlib-3.7.0-cp39-cp39-win_amd64.whl (7.6 MB)
+     ---------------------------------------- 7.6/7.6 MB 13.6 MB/s eta 0:00:00
+Requirement already satisfied: numpy!=1.24.0,>=1.17 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from seaborn) (1.24.2)
+Requirement already satisfied: pandas>=0.25 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from seaborn) (1.5.3)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from matplotlib!=3.6.1,>=3.1->seaborn) (2.8.2)
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.38.0-py3-none-any.whl (965 kB)
+     ---------------------------------------- 965.4/965.4 kB 15.4 MB/s eta 0:00:00
+Collecting pyparsing>=2.3.1
+  Using cached pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Collecting cycler>=0.10
+  Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Requirement already satisfied: packaging>=20.0 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from matplotlib!=3.6.1,>=3.1->seaborn) (23.0)
+Collecting importlib-resources>=3.2.0
+  Downloading importlib_resources-5.12.0-py3-none-any.whl (36 kB)
+Collecting pillow>=6.2.0
+  Downloading Pillow-9.4.0-cp39-cp39-win_amd64.whl (2.5 MB)
+     ---------------------------------------- 2.5/2.5 MB 15.9 MB/s eta 0:00:00
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.0.7-cp39-cp39-win_amd64.whl (160 kB)
+     ---------------------------------------- 160.2/160.2 kB 9.4 MB/s eta 0:00:00
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.4.4-cp39-cp39-win_amd64.whl (55 kB)
+     ---------------------------------------- 55.4/55.4 kB 2.8 MB/s eta 0:00:00
+Requirement already satisfied: pytz>=2020.1 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from pandas>=0.25->seaborn) (2022.7.1)
+Requirement already satisfied: zipp>=3.1.0 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from importlib-resources>=3.2.0->matplotlib!=3.6.1,>=3.1->seaborn) (3.14.0)
+Requirement already satisfied: six>=1.5 in c:\users\ganer\.conda\envs\demo\lib\site-packages (from python-dateutil>=2.7->matplotlib!=3.6.1,>=3.1->seaborn) (1.16.0)
+Installing collected packages: pyparsing, pillow, kiwisolver, importlib-resources, fonttools, cycler, contourpy, matplotlib, seaborn
+Successfully installed contourpy-1.0.7 cycler-0.11.0 fonttools-4.38.0 importlib-resources-5.12.0 kiwisolver-1.4.4 matplotlib-3.7.0 pillow-9.4.0 pyparsing-3.0.9 seaborn-0.12.2
+
+(demo) D:\Lemonrice\virtual_demo>freeze -r requirements_start.txt
+'freeze' is not recognized as an internal or external command,
+operable program or batch file.
+
+(demo) D:\Lemonrice\virtual_demo>pip freeze -r requirements_start.txt
+ERROR: Exception:
+Traceback (most recent call last):
+  File "C:\Users\Ganer\.conda\envs\demo\lib\site-packages\pip\_internal\cli\base_command.py", line 160, in exc_logging_wrapper
+    status = run_func(*args)
+  File "C:\Users\Ganer\.conda\envs\demo\lib\site-packages\pip\_internal\commands\freeze.py", line 87, in run
+    for line in freeze(
+  File "C:\Users\Ganer\.conda\envs\demo\lib\site-packages\pip\_internal\operations\freeze.py", line 58, in freeze
+    with open(req_file_path) as req_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'requirements_start.txt'
+
+(demo) D:\Lemonrice\virtual_demo>pip freeze > requirements.txt
+
+(demo) D:\Lemonrice\virtual_demo>jupyter notebook
+[I 18:19:30.713 NotebookApp] Serving notebooks from local directory: D:\Lemonrice\virtual_demo
+[I 18:19:30.713 NotebookApp] Jupyter Notebook 6.5.2 is running at:
+[I 18:19:30.715 NotebookApp] http://localhost:8888/?token=9a670334fbdb2cb4a445223dfe415280c301b31208324ce1
+[I 18:19:30.716 NotebookApp]  or http://127.0.0.1:8888/?token=9a670334fbdb2cb4a445223dfe415280c301b31208324ce1
+[I 18:19:30.723 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:19:30.856 NotebookApp]
+
+    To access the notebook, open this file in a browser:
+        file:///C:/Users/Ganer/AppData/Roaming/jupyter/runtime/nbserver-2408-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=9a670334fbdb2cb4a445223dfe415280c301b31208324ce1
+     or http://127.0.0.1:8888/?token=9a670334fbdb2cb4a445223dfe415280c301b31208324ce1
+[I 18:20:27.581 NotebookApp] Creating new notebook in
+[I 18:20:38.072 NotebookApp] Kernel started: 4ccddb91-cde7-488f-9917-32c4205cecd4, name: python3
+[I 18:21:31.440 NotebookApp] Starting buffering for 4ccddb91-cde7-488f-9917-32c4205cecd4:cde9756e5dc34c7399ce677fa7694237
+[I 18:21:31.460 NotebookApp] Kernel shutdown: 4ccddb91-cde7-488f-9917-32c4205cecd4
+[I 18:25:05.870 NotebookApp] Interrupted...
+[I 18:25:05.871 NotebookApp] Shutting down 0 kernels
+[I 18:25:05.873 NotebookApp] Shutting down 0 terminals
+
+(demo) D:\Lemonrice\virtual_demo> conda deactivate

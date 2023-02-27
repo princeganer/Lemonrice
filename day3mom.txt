@@ -1,0 +1,7 @@
+Questions to be answered
+
+1. How many calls in each month?
+2. # of Customers willing to subscribe in which period of month?
+	( SM- start of month, MM- mid of month, EM- end of month )
+	https://www.timeanddate.com/calendar/monthly.html?year=2008&month=5&country=15
+3. Effect of holidays on subscribers?
