@@ -1,0 +1,16 @@
+Day 3 (Feb 23, 2023)
+1. Removed the incosisitency from the columns
+2. Merged bank-full dataset and bank-addition full dataset(21 columns).
+   (bank-full had 17 columns and bank-addition had 20 columns) 
+3. Finding values of additional columns(indexes) for bank-full(using excel).
+
+Day 4 (Feb 24, 2023)
+1. completed the merging of indexes with the help of month and year manually by excel
+   and with the help of python code.
+2. Finalized the dataset and started working on the data cleaning process.
+3. conversion of jobs and marital column using labbel encoding.
+    
+Day 5 (Feb 25, 2023)
+1. worked on the columns like education(categorical encoding)
+2. converting month column into Quarters by categorical encoding
+3. converted unknown and nonexistent value into NAN values.
